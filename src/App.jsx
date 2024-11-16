@@ -3,6 +3,8 @@ import Navbar from './Components/Navbar';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Home from './Pages/Home/Home';
 import { Footer } from './Components/Footer';
+import { sms } from './Constant';
+import Sms from './Pages/Sms';
 function App() {
   return (
     <>
@@ -12,6 +14,7 @@ function App() {
     <Route path='/' Component={Home}></Route>
    </Routes>
    <Footer></Footer>
+    
    </BrowserRouter>
       
     </>

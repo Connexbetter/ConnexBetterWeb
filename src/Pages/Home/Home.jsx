@@ -4,6 +4,8 @@ import { chooseConnex } from '../../Constant';
 import { Card } from '../../Pages/CommonComponents/Card';
 import { CommonHeading } from '../CommonComponents/CommonHeading';
 import ContentImageBlock from "../CommonComponents/ContentImageBlock";
+import Sms from '../Sms';
+import { sms } from '../../Constant';
 
 
 function Home() {
@@ -44,7 +46,11 @@ function Home() {
 
   </div>
 
-
+  {/* {
+      sms.map((ele,ind)=>{return(<Sms key={ind} title={ele.title} content={ele.content}></Sms>)
+        
+      })
+    } */}
 
   </section>
   )
