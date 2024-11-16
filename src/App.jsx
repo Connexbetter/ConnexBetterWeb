@@ -1,14 +1,17 @@
 import React from 'react'
-import { Button } from './Pages/CommonComponents/Button';
 import Navbar from './Components/Navbar';
-import { BrowserRouter } from 'react-router-dom';
-
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Home from './Pages/Home/Home';
+import { Footer } from './Components/Footer';
 function App() {
   return (
     <>
    <BrowserRouter>
    <Navbar></Navbar>
-   <Button name="contact us"></Button>
+   <Routes>
+    <Route path='/' Component={Home}></Route>
+   </Routes>
+   <Footer></Footer>
    </BrowserRouter>
       
     </>

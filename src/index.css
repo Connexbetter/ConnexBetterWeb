@@ -13,7 +13,7 @@
  }
 #root{
     max-width: 1280px;
-    margin: 0 auto;
+    margin: auto;
     padding:0 1rem 0 1rem ;
 }
 :root{
@@ -22,4 +22,11 @@
     --secondarycolor:#f5f7ff ;
     --tertiarycolor:#555555;
     --supportcolor:#f8f8f8;
+  }
+  li{
+    list-style: none;
+  }
+  .container{
+    border: 2px solid;
+    margin:2rem 0;
   }
