@@ -156,6 +156,31 @@ export const footerpart=[
     
     
 
+    export const sms=[
+        {
+            img:"",
+            title:"Power Up Your Customer Engagement with Smart SMS Solutions",
+            content:"Enhance customer experience with personalized SMS campaigns and real-time alerts. Reach wide audiences with targeted bulk messaging for launches, offers, deals, and codes. Ensure reliable delivery of important messages using our advanced system. Improve SMS marketing with trackable URL links for optimized content and performance tracking"
+
+        },
+        {
+            img:"",
+            title:"Reliable, Low-Latency Messaging for Global Reach with Seamless Fallback Mechanism",
+            content:"Achieve timely global communication with our enterprise-grade platform, featuring low-latency delivery and automatic fallback to voice and WhatsApp. Monitor message delivery in real time with a live dashboard, and send and receive messages in various languages, thanks to Unicode support for regional characters."
+        },
+        {
+            img:"",
+            title:"Collect data, analyse insights and take action",
+            content:"Keep an eye on how well your SMS campaigns are doing. By looking closely at the results, you can see which strategies work best for your audience. This knowledge helps you create better campaigns that boost engagement and conversion rates."
+        },
+        {
+            img:"",
+            title:"Scale Engagement with Secure, Compliant 2-Way SMS Conversations",
+            content:"Utilize two-way SMS to actively encourage engagement and collect valuable feedback or insights from customers across the globe."
+        },
+
+    ]
+
 
 
 
