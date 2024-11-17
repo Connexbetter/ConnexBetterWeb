@@ -27,6 +27,11 @@
     list-style: none;
   }
   .container{
-    border: 2px solid;
+   border: 2px solid;
     margin:2rem 0;
   }
+  /* @media(width<=892){
+    #root{
+      max-width:800px;
+    }
+  } */

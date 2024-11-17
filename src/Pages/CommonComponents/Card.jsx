@@ -1,4 +1,5 @@
 // import { offers } from "../../Constant"
+import { Button } from "./Button";
 export const Card=(props)=>{
     return(
         <>
@@ -9,6 +10,7 @@ export const Card=(props)=>{
             <div className="card-content flex flex-col gap-2">
                 <h2 className="text-lg">{props.title}</h2>
                 <p>{props.content}</p>
+               
             </div>
             </div>
         </>

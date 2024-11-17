@@ -10,6 +10,7 @@ import needicon from "../assets/homeImage/boxPattern.svg";
 import featureicon from "../assets/homeImage/concentricPoint.svg";
 import onboarding from "../assets/homeImage/handShake.svg";
 import supporticon from "../assets/homeImage/tapeRecord.svg";
+import logo from "/logo.svg";
 // Heropage Data===============================================
 // Navbar data==
 export const navbardata=[
@@ -72,7 +73,7 @@ export const offers=[
     },
 ]
 
-// / Why do Businesses choose Connex Better =========
+// / Why do Businesses choose Connex Better ==================
 export const chooseConnex=[
     {
         id:"choose-1",
@@ -115,8 +116,16 @@ export const chooseConnex=[
 
 // Footer ==================================================================
 export const footerpart=[
-    
-        {
+    {
+        h:logo,
+        l1:"Connect Better, Engage Better",
+        l2:"Our services include Bulk SMS, OTP delivery, IVR, Voice OBD, SMS APIs, RCS Messaging, and WhatsApp integration.",
+        l3:"",
+        l4:"",
+        l5:""
+
+    },
+{
             h:"Services",
             l1:"SMS API",
             l2:"WhatsApp Bussiness API",
@@ -144,6 +153,8 @@ export const footerpart=[
 
         }
     ]
+    
+    
 
 
 

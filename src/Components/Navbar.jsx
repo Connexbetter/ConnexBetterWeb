@@ -1,11 +1,13 @@
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import { navbardata } from '../Constant';
+import logo from "/logo.svg"
 // import Reactlogo ======================
 import { FaBars } from "react-icons/fa6";
 import { RxCross1 } from "react-icons/rx";
 // import Button Component================
 import { Button } from '../Pages/CommonComponents/Button';
+
 function Navbar() {
   const[mobilenav,setMobilenav]=useState(false);
   function mobileToggle(){
@@ -15,9 +17,9 @@ function Navbar() {
   }
   return (
     <>
-   <nav className='flex justify-between pt-3 text-xl'>
+   <nav className='flex justify-between pt-3 pb-3 text-xl sticky top-0 bg-white border-b'>
    <div className='logo-sec'>
-    <img src="" alt='logo'></img>           
+    <img src={logo} alt='logo' height={20}></img>           
    </div>
    <ul className=' hidden lg:flex gap-12 '>
     {
@@ -28,9 +30,9 @@ function Navbar() {
         })
     }
    </ul>
-   <div className='hidden lg:flex gap-10'>  
+   <div className='hidden lg:flex gap-10 items-center'>  
 
-<Button name="login"></Button>
+    <Button name="login"></Button>
     <NavLink>3456789</NavLink>
    </div>
    <button  className="lg:hidden" onClick={mobileToggle} >
