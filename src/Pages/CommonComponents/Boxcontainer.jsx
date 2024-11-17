@@ -2,7 +2,7 @@ import React from 'react'
 import { CommonHeading } from './CommonHeading';
 import { Card } from './Card';
 
-function Boxcontainer({heading,para,carddata}) {
+function Boxcontainer({heading,para,carddata,showbutton}) {
   return (
 
 <div className='container'>
@@ -10,7 +10,7 @@ function Boxcontainer({heading,para,carddata}) {
   <div  className=' grid gap-6 lg:grid-cols-3 md:grid-cols-2'>
   {carddata.map((ele,ind)=>{
     return(
-        <Card key={ind} title={ele.title} content={ele.content} img={ele.img}></Card>
+        <Card key={ind} title={ele.title} content={ele.content} img={ele.img} button={showbutton}></Card>
     )
     
   })}
