@@ -232,6 +232,7 @@ export const sms = [
     title: "Power Up Your Customer Engagement with Smart SMS Solutions",
     content:
       "Enhance customer experience with personalized SMS campaigns and real-time alerts. Reach wide audiences with targeted bulk messaging for launches, offers, deals, and codes. Ensure reliable delivery of important messages using our advanced system. Improve SMS marketing with trackable URL links for optimized content and performance tracking",
+    contentOnLeft:true
   },
   {
     img: "",
@@ -239,17 +240,112 @@ export const sms = [
       "Reliable, Low-Latency Messaging for Global Reach with Seamless Fallback Mechanism",
     content:
       "Achieve timely global communication with our enterprise-grade platform, featuring low-latency delivery and automatic fallback to voice and WhatsApp. Monitor message delivery in real time with a live dashboard, and send and receive messages in various languages, thanks to Unicode support for regional characters.",
-  },
+    contentOnLeft:false
+    },
   {
     img: "",
     title: "Collect data, analyse insights and take action",
     content:
       "Keep an eye on how well your SMS campaigns are doing. By looking closely at the results, you can see which strategies work best for your audience. This knowledge helps you create better campaigns that boost engagement and conversion rates.",
-  },
+    contentOnLeft:true
+    },
   {
     img: "",
     title: "Scale Engagement with Secure, Compliant 2-Way SMS Conversations",
     content:
       "Utilize two-way SMS to actively encourage engagement and collect valuable feedback or insights from customers across the globe.",
-  },
+    contentOnLeft:false
+    },
 ];
+
+
+
+export const smsOtp=[
+  {
+    img: "",
+    title: "Login",
+    content:
+      "A customer securely logs in by entering their username and password, ensuring authorized access to their account and services",
+    contentOnLeft:true
+  },
+  {
+    img: "",
+    title: "2FA",
+    content:
+      "The customer receives a 2FA SMS containing their unique one-time pin (OTP), providing an additional layer of security for the login process.",
+    contentOnLeft:false
+  },
+  {
+    img: "",
+    title: "OTP",
+    content:
+      "The user enters the OTP into the login page, completing the authentication process and gaining secure access to their account.",
+    contentOnLeft:true
+  },
+  {
+    img: "",
+    title: "Authentication",
+    content:
+      "They have successfully verified their identity, completing the authentication process and gaining secure access to their account.",
+    contentOnLeft:false
+  },
+]
+
+
+export const internationalSms=[
+  {
+    img: "",
+    title: "Save Time with Our Business Process Streamlining Software",
+    content:
+      "Streamline your business operations and save time with our software, designed to optimize team management and improve efficiency for businesses of any size",
+    contentOnLeft:true
+  },
+  {
+    img: "",
+    title: "Comprehensive Technology Suite for Efficient Operations",
+    content:
+      "Our robust technology suite provides all the tools you need to manage your team, operations, and processes seamlessly, helping you scale your business effectively.",
+    contentOnLeft:false
+  },
+  {
+    img: "",
+    title: "Connect Instantly with Customers, Employees, and Partners",
+    content:
+      "Leverage our world-class network to reach customers, employees, and partners effortlessly with just one click, ensuring quick and reliable communication across your business ecosystem.",
+    contentOnLeft:true
+  },
+]
+
+
+export const bulkSms=[
+  {
+    img: "",
+    title: "",
+    content:
+      "",
+    contentOnLeft:true
+  },
+  {
+    img: "",
+    title: "",
+    content:
+      "",
+    contentOnLeft:false
+  },
+  {
+    img: "",
+    title: "",
+    content:
+      "",
+    contentOnLeft:true
+  },
+  {
+    img: "",
+    title: "",
+    content:
+      "",
+    contentOnLeft:false
+  },
+]
+
+

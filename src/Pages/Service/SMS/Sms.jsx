@@ -1,6 +1,7 @@
 import ContentImageBlock from "../../CommonComponents/ContentImageBlock";
 import Boxcontainer from "../../CommonComponents/Boxcontainer";
-import { smsProvider } from "../../../Constant";
+import { sms, smsProvider } from "../../../Constant";
+import LeftRightBLock from "../../CommonComponents/LeftRightBLock";
 export const Sms=()=>{
     return(
         <section>
@@ -17,6 +18,23 @@ export const Sms=()=>{
         para="Connex Better provides reliable communication solutions and seamless API integration, ensuring smooth operations and enhanced customer interactions."
         carddata={smsProvider}
         showbutton={false}></Boxcontainer>
+
+      {/**left right content and image design block  */}
+
+      {sms.map((item,index)=>(
+        <div className="container">
+           <LeftRightBLock
+        key={index}
+        contentOnLeft={item.contentOnLeft}
+        title={item.title}
+        content={item.content}
+        image={item.img}
+/>
+        </div>
+       
+      ))}
         </section>
+
+
     )
 }
