@@ -16,7 +16,7 @@ function LeftRightBLock ({title,content,image,contentOnLeft}) {
           </>
         ) : (
           <>
-            <div className="flex-1">
+            <div className="secComponent flex-1 ">
               <img src={image} alt="Visual representation" className="w-full h-auto rounded-md" />
             </div>
 

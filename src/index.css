@@ -36,3 +36,10 @@ li {
       max-width:800px;
     }
   } */
+@media (width<= 600px){
+  .secComponent{
+    img{
+      order: 2;
+    }
+  }
+}
