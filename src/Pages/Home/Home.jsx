@@ -9,9 +9,7 @@ import { Button } from "../CommonComponents/Button";
 import smscallimg from '../../assets/HomeImages/our feature.json';
 import metalogo from "../../assets/HomeImages/Metalogo.svg"
 import Lottie from "lottie-react";
-import { Sms } from "../Service/SMS/sms";
-// import Sms from '../Sms';
-// import { sms } from '../../Constant';
+
 function Home() {
   return (
     <section className="hero-section section">
