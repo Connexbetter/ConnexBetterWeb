@@ -11,6 +11,11 @@ import featureicon from "../assets/homeImage/concentricPoint.svg";
 import onboarding from "../assets/homeImage/handShake.svg";
 import supporticon from "../assets/homeImage/tapeRecord.svg";
 import logo from "/logo.svg";
+// SMSpage Images
+import colletctdataimg from "../assets/SMS-20241116T100910Z-001/SMS/Images/Collect data, analyse insights and take action.webp";
+import powerupimg from "../assets/SMS-20241116T100910Z-001/SMS/Images/Power Up Your Customer Engagement with Smart SMS Solutions.webp";
+import reliableimg from "../assets/SMS-20241116T100910Z-001/SMS/Images/Reliable, Low-Latency Messaging for Global Reach with Seamless Fallback Mechanism.webp";
+import scaleengageimg from "../assets/SMS-20241116T100910Z-001/SMS/Images/Scale Engagement with Secure, Compliant 2-Way SMS Conversations.webp";
 // Heropage Data===============================================
 // Navbar data==
 export const navbardata = [
@@ -228,14 +233,14 @@ export const smsProvider=[
 
 export const sms = [
   {
-    img: "",
+    img:powerupimg,
     title: "Power Up Your Customer Engagement with Smart SMS Solutions",
     content:
       "Enhance customer experience with personalized SMS campaigns and real-time alerts. Reach wide audiences with targeted bulk messaging for launches, offers, deals, and codes. Ensure reliable delivery of important messages using our advanced system. Improve SMS marketing with trackable URL links for optimized content and performance tracking",
     contentOnLeft:true
   },
   {
-    img: "",
+    img:reliableimg,
     title:
       "Reliable, Low-Latency Messaging for Global Reach with Seamless Fallback Mechanism",
     content:
@@ -243,14 +248,14 @@ export const sms = [
     contentOnLeft:false
     },
   {
-    img: "",
+    img:colletctdataimg,
     title: "Collect data, analyse insights and take action",
     content:
       "Keep an eye on how well your SMS campaigns are doing. By looking closely at the results, you can see which strategies work best for your audience. This knowledge helps you create better campaigns that boost engagement and conversion rates.",
     contentOnLeft:true
     },
   {
-    img: "",
+    img:scaleengageimg,
     title: "Scale Engagement with Secure, Compliant 2-Way SMS Conversations",
     content:
       "Utilize two-way SMS to actively encourage engagement and collect valuable feedback or insights from customers across the globe.",
@@ -347,5 +352,51 @@ export const bulkSms=[
     contentOnLeft:false
   },
 ]
+// Rcs box container ===================================================== 
+export const rcsbox = [
+  {
+    id: "choose-1",
+    img: savingicon,
+    title: "Maximize Your Savings by Cutting Costs by 27%.",
+    content:
+      "We optimizes spending with templates and channel selection for cost savings.",
+  },
+  {
+    id: "choose-2",
+    img: benifiticon,
+    title: "Benefit from the Price Advantage: Save up to 24%.",
+    content:
+      "Our platform delivers immediate value with up to 24% cost reduction from day one.",
+  },
+  {
+    id: "choose-3",
+    img: needicon,
+    title: "Everything You Need, All in One Place",
+    content:
+      "We offer comprehensive messaging solutions SMS, WhatsApp, RCS, IVR, and email.",
+  },
+  {
+    id: "choose-4",
+    img: featureicon,
+    title: "More Features over any other Platform",
+    content:
+      "We provide a high-performance platform with advanced UI and API integrations.",
+  },
+  {
+    id: "choose-5",
+    img: onboarding,
+    title: "Start Free Onboarding on Any Channel",
+    content:
+      "Join us for free onboarding, plus free credits and up to 9% extra savings.",
+  },
+  {
+    id: "choose-6",
+    img: supporticon,
+    title: "Support You Can Count On: Always Here, 24/7.",
+    content:
+      "We trust our dedicated employees to provide exceptional enterprise solutions.",
+  },
+];
+
 
 
