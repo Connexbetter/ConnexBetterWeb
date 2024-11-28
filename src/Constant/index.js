@@ -696,21 +696,21 @@ export const email=[
 
 export const voiceBox=[
   {
-    id: "choose-6",
+    id: "choose-1",
     img: savingicon,
     title: "Contact center solution",
     content:
       "It streamlines communication, reduces wait times, and provides real-time analytics. Its multichannel support and scalability enhance customer satisfaction and efficiency.",
   },
   {
-    id: "choose-6",
+    id: "choose-2",
     img: savingicon,
     title: "Voice OBD Services",
     content:
       "Voice OBD Service delivers automated voice messages to large audiences, enhancing customer engagement for promotions, alerts, reminders, and feedback collection.",
   },
   {
-    id: "choose-6",
+    id: "choose-3",
     img: savingicon,
     title: "Call Patching",
     content:
@@ -718,3 +718,65 @@ export const voiceBox=[
   },
 ]
 
+export const smsScroll = [
+  {
+    title: "Deliverability & Performance",
+    content:
+      "Look for a provider experienced in handling high message volumes, ideally with a cloud-based infrastructure or a strong presence in the CPaaS space. If a provider isn't transparent about their delivery rates, it could signal unreliable message delivery, which is a red flag.",
+  },
+  {
+    title: "Scalability",
+    content:
+      "Choose a provider that can handle your current message volume and scale as your business grows. A provider that compromises performance for scalability may not support your long-term needs, making them a less ideal choice.",
+  },
+  {
+    title: "Security",
+    content:
+      "Compliance with regulations like the EU’s GDPR is essential for any SMS service provider. Ensure their security measures meet industry standards, such as encryption, two-factor authentication, and secure data storage. A history of data breaches is a warning sign of inadequate security practices.",
+  },
+  {
+    title: "Compliance",
+    content:
+      "When reaching out to a global audience, ensure your content complies with local SMS laws. Opt for a provider that understands SMS compliance and has experience in navigating international regulations, especially if they have offices in multiple countries.",
+  },
+  {
+    title: "Coverage & Connections",
+    content:
+      "For a global customer base, choose an SMS provider with broad geographic coverage. Check their partnerships with local carriers. Providers with more direct connections to mobile network operators worldwide will ensure better reach and reliability.",
+  },
+  {
+    title: "Routing",
+    content:
+      "Effective message routing ensures timely delivery. The optimal routing path depends on factors such as the message type (e.g., SMS OTPs need faster routes than promotional messages), customer location, and network congestion. Providers should also have backup routes to maintain reliability during carrier issues.",
+  },
+  {
+    title: "Integrations",
+    content:
+      "Ensure the SMS provider integrates seamlessly with your existing systems, such as CRM, marketing automation, and customer support platforms. Compatibility is key to maintaining a smooth workflow without technical disruptions.",
+  },
+  {
+    title: "API",
+    content:
+      "An easy-to-integrate SMS API is crucial. Providers offering comprehensive SDKs, detailed documentation, and active support forums show a commitment to helping your development team maximize their services' potential.",
+  },
+  {
+    title: "Message Types & Features",
+    content:
+      "Understand the types of messages each provider supports and their customization options. Features like A/B testing, personalization, delivery tracking, and scheduling can enhance audience engagement and campaign effectiveness.",
+  },
+  {
+    title: "Analytics & Reporting",
+    content:
+      "Choose a provider that offers robust analytics and reporting tools. Insights into delivery rates, customer engagement, and campaign performance can help optimize your SMS strategy.",
+  },
+  {
+    title: "Customer Support",
+    content:
+      "Opt for a provider with responsive customer support, ideally with global offices for local language assistance and expertise in regulatory compliance.",
+  },
+  {
+    title: "Trial & Testing",
+    content:
+      "Look for a provider that offers a demo or trial period. This allows you to evaluate their services before committing. Providers confident in their offerings will often provide free trials to help you assess compatibility and key features.",
+  },
+]
