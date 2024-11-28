@@ -10,7 +10,7 @@ import { SmsOtp } from "./Pages/Service/SmsOtp/SmsOtp";
 import { InternationalSms } from "./Pages/Service/InternationalSms/InternationalSms";
 import { BulkSms  } from "./Pages/Service/BulkSms/BulkSms";
 // import { sms } from './Constant';
-// import Sms from './Pages/Sms';
+
 function App() {
   return (
     
@@ -26,7 +26,9 @@ function App() {
           <Route path="/SmsOtp" Component={SmsOtp}></Route>
           <Route path="/BulkSms" Component={BulkSms}></Route>
         </Routes>
+        {/* <FAQ></FAQ> */}
         <Footer/>
+        
       </BrowserRouter>
   
   );

@@ -1,15 +1,49 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { navbardata } from "../Constant";
+import { offers } from "../Constant";
 import logo from "/logo.svg";
+// arrowdown icon
+import { MdKeyboardArrowDown } from "react-icons/md";
 // import Reactlogo ======================
 import { FaBars } from "react-icons/fa6";
 import { RxCross1 } from "react-icons/rx";
 // import Button Component================
 import { Button } from "../Pages/CommonComponents/Button";
+import { Card } from "../Pages/CommonComponents/Card";
 
 function Navbar() {
   const [mobilenav, setMobilenav] = useState(false);
+  const [Servicenav,setServicenav]=useState(false)
+  // Handeling Service and about navbar
+  function handelEvents(event)
+  {
+    
+    console.log(event.target.parentElement.parentElement.innerText)
+    if(event.target.parentElement.parentElement.innerText=="About")
+    {
+      handelAboutnav();
+
+    }
+    else{
+      handelServicenav();
+
+    }
+
+  }
+// handel Service nav=======================================
+  function handelServicenav()
+{
+console.log("service nav")
+ 
+   {
+    setServicenav(!Servicenav)
+   }
+      
+    
+  }  
+
+  // Mobile togglenav===============================================
   function mobileToggle() {
     return setMobilenav(!mobilenav);
   }
@@ -23,7 +57,7 @@ function Navbar() {
           {navbardata.map((ele, ind) => {
             return (
               <li key={ind}>
-                <NavLink to={ele.path}>{ele.linkname}</NavLink>
+                <NavLink to={ele.path}>{ele.linkname}{ ele.arrowlogo? <MdKeyboardArrowDown className="inline ml-2" onClick={handelEvents} />:""} </NavLink>
               </li>
             );
           })}
@@ -54,8 +88,61 @@ function Navbar() {
           </div>
         </div>
       )}
-    </>
+
+
+      {
+    Servicenav && (
+      <div className=" h-60 in flex">
+      {
+       <div className="flex">
+       { 
+        offers.map((ele,ind)=>{
+          return <Card 
+             key={ind}
+              ele={ele}></Card>
+        })
+       }
+      
+    
+       </div>
+      }
+              
+      </div>
+    )
+  }
+</>
+
+    
   );
 }
+
+// handel Service nav ===============================================
+
+
+  
+    
+ 
+//  {offers.map((ele, ind) => {
+//       return (
+        
+//         <Card key={ind} ele={ele}></Card>
+//       );
+//     })}
+    
+  
+
+
+// handel Aboutnav =================================================
+function handelAboutnav()
+{
+  console.log("about");
+  return(
+    <div>
+    <p>gfghkjljlkhuiyui</p>
+        
+      </div>
+   )
+}
+
 
 export default Navbar;

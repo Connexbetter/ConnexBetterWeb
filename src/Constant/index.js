@@ -22,22 +22,27 @@ export const navbardata = [
   {
     path: "/",
     linkname: "Home",
+    arrowlogo:false
   },
   {
     path: "/Service",
     linkname: "Service",
+    arrowlogo:true
   },
   {
     path: "/About",
     linkname: "About",
+    arrowlogo:true
   },
   {
     path: "/Pricing",
     linkname: "Pricing",
+    arrowlogo:false
   },
   {
     path: "/Contact",
     linkname: "Contact",
+    arrowlogo:false
   },
 ];
 // What we offers====

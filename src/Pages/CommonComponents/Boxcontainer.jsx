@@ -11,10 +11,7 @@ function Boxcontainer({ heading, para, carddata, showbutton }) {
           return (
             <Card
               key={ind}
-              title={ele.title}
-              content={ele.content}
-              img={ele.img}
-              button={showbutton}
+             ele={ele}
             ></Card>
           );
         })}

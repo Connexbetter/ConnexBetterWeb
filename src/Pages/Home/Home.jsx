@@ -10,6 +10,7 @@ import smscallimg from '../../assets/HomeImages/our feature.json';
 import metalogo from "../../assets/HomeImages/Metalogo.svg"
 import Lottie from "lottie-react";
 
+
 function Home() {
   return (
     <section className="hero-section section">
@@ -46,10 +47,7 @@ function Home() {
         showbutton={true}
       />
 
-     
-
-
-      {/* Why choose Connex Better container */}
+    {/* Why choose Connex Better container */}
       <Boxcontainer
         heading="Why do businesses choose Connex Better"
         
@@ -87,6 +85,7 @@ function Home() {
         </div>
    
         </div>
+       
       
     </section>
   );
