@@ -9,15 +9,15 @@ export const Sms=()=>{
         <section>
             <div className="container">
         <ContentImageBlock
-          subheading="Get Started Today"
-          heading="Start sending SMS with Connex Better for free "
-          content="Sign up today and create your perfect customer engagement experience."
+          subheading="[SMS API]"
+          heading="Send SMS worldwide with a top-rated SMS service provider. "
+          content="Achieve the highest SMS delivery rates worldwide using a reliable A2P SMS service from Connex Better."
           ></ContentImageBlock>
       </div>
      
       <Boxcontainer 
-        heading="Why do businesses choose Connex Better"
-        para="Connex Better provides reliable communication solutions and seamless API integration, ensuring smooth operations and enhanced customer interactions."
+        heading="A comprehensive global SMS provider that handles everything."
+        para="Our A2P SMS service supports diverse use cases, delivering top-notch delivery rates. It includes advanced fraud protection, personalization options, and more."
         carddata={smsProvider}
         showbutton={false}></Boxcontainer>
 

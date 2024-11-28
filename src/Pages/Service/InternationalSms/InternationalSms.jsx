@@ -1,11 +1,11 @@
-import ContentImageBlock from "../../CommonComponents/ContentImageBlock";
-import Boxcontainer from "../../CommonComponents/Boxcontainer";
-import { sms, rcsbox, rcs } from "../../../Constant";
-import LeftRightBLock from "../../CommonComponents/LeftRightBLock";
+import { internationalSms, internationalSmsBox } from "../../../Constant"
+import Boxcontainer from "../../CommonComponents/Boxcontainer"
+import ContentImageBlock from "../../CommonComponents/ContentImageBlock"
+import LeftRightBLock from "../../CommonComponents/LeftRightBLock"
 
-export const Rcs=()=>{
+
+export const InternationalSms=()=>{
     return(
-
         <section>
             <div className="container">
         <ContentImageBlock
@@ -18,12 +18,12 @@ export const Rcs=()=>{
       <Boxcontainer 
         heading="Discover key features of RCS for businesses"
         para="Enhance your interaction using RCS's advanced communication tools. Explore each section to discover the essential features of RCS A2P messaging."
-        carddata={rcsbox}
+        carddata={internationalSmsBox}
         showbutton={false}></Boxcontainer>
 
       {/**left right content and image design block  */}
 
-      {rcs.map((item,index)=>(
+      {internationalSms.map((item,index)=>(
         <div className="container " >
            <LeftRightBLock
         key={index}

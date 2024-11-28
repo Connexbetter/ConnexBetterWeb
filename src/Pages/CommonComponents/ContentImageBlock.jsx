@@ -6,7 +6,7 @@ function ContentImageBlock({ subheading, heading, content,img }) {
         <p>{subheading}</p>
         <h2>{heading}</h2>
         <p>{content}</p>
-        <Button name="contact us"></Button>
+        <Button name="Try for free"></Button>
       </div>
       <div className="">
         <img src={img}></img>

@@ -1,29 +1,30 @@
-import ContentImageBlock from "../../CommonComponents/ContentImageBlock";
-import Boxcontainer from "../../CommonComponents/Boxcontainer";
-import { sms, rcsbox, rcs } from "../../../Constant";
-import LeftRightBLock from "../../CommonComponents/LeftRightBLock";
+import ContentImageBlock from "../../CommonComponents/ContentImageBlock"
+import Boxcontainer from "../../CommonComponents/Boxcontainer"
+import LeftRightBLock from "../../CommonComponents/LeftRightBLock"
+import { smsOtp, smsOtpBox } from "../../../Constant"
 
-export const Rcs=()=>{
+
+
+export const SmsOtp=()=>{
     return(
-
         <section>
             <div className="container">
         <ContentImageBlock
-          subheading="[RCS API]"
-          heading="Create memorable conversational experiences with RCS Business Messaging"
-          content="Interact with clients using branded conversational messaging on RCS."
+          subheading="[OTP AUTHENTICATOR]"
+          heading="Best OTP SMS Service Provider in India"
+          content="Enhance user security with our OTP service. Ensure smooth identity verification for online transactions while safeguarding data through dependable OTP SMS authentication via SMS, WhatsApp, RCS, Email, or Voice worldwide."
         ></ContentImageBlock>
       </div>
      
       <Boxcontainer 
         heading="Discover key features of RCS for businesses"
         para="Enhance your interaction using RCS's advanced communication tools. Explore each section to discover the essential features of RCS A2P messaging."
-        carddata={rcsbox}
+        carddata={smsOtpBox}
         showbutton={false}></Boxcontainer>
 
       {/**left right content and image design block  */}
 
-      {rcs.map((item,index)=>(
+      {smsOtp.map((item,index)=>(
         <div className="container " >
            <LeftRightBLock
         key={index}
