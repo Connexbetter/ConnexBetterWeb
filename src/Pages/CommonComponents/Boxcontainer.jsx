@@ -11,8 +11,7 @@ function Boxcontainer({ heading, para, carddata, showbutton }) {
           return (
             <Card
               key={ind}
-             ele={ele}
-            ></Card>
+             ele={ele}></Card>
           );
         })}
       </div>

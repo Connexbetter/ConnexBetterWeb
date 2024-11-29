@@ -1,9 +1,11 @@
 import ContentImageBlock from "../../CommonComponents/ContentImageBlock";
 import Boxcontainer from "../../CommonComponents/Boxcontainer";
 import smsheroimg from "../../../assets/SMS-20241116T100910Z-001/SMS/Lottie/SMS Hero section.json";
-import { sms, smsProvider } from "../../../Constant";
+import { sms, smsProvider,smsScroll } from "../../../Constant";
 import LeftRightBLock from "../../CommonComponents/LeftRightBLock";
 import Lottie from "lottie-react";
+import { CommonHeading } from "../../CommonComponents/CommonHeading";
+import { Scrollcomponent } from "../../CommonComponents/scrollcomponent";
 export const Sms=()=>{
     return(
         <section>
@@ -35,6 +37,28 @@ export const Sms=()=>{
         </div>
        
       ))}
+      <div className="container grid lg:grid-cols-2 ">
+      <CommonHeading 
+         h="How to choose an SMS provider"
+        p="Here are the key factors you should consider when choosing an SMS provider.">
+
+        </CommonHeading>
+        <div className="h-80 overflow-y-scroll ">
+         {
+          smsScroll.map((ele,ind)=>{
+            return(
+              <div>
+                <h2 className="text-xl font-medium">{ele.title}</h2>
+                <p>{ele.content}</p>
+              </div>
+            )
+          })
+
+         }
+        </div>
+
+      </div>
+      
         </section>
 
 

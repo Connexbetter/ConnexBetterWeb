@@ -25,7 +25,7 @@ export const navbardata = [
     arrowlogo:false
   },
   {
-    path: "/Service",
+    path: "/",
     linkname: "Service",
     arrowlogo:true
   },
