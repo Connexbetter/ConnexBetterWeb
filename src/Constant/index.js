@@ -1,5 +1,6 @@
 // Heropage images
 import smsicon from "../assets/HomeImages/SmsSVG.svg";
+//import {Lottie} from "lottie-react";
 import rcsicon from "../assets/HomeImages/RcsSVG.svg";
 import whatsappicon from "../assets/HomeImages/WhatsappSVG.svg";
 import emailicon from "../assets/HomeImages/EmailSVG.svg";
@@ -11,11 +12,36 @@ import featureicon from "../assets/homeImage/concentricPoint.svg";
 import onboarding from "../assets/homeImage/handShake.svg";
 import supporticon from "../assets/homeImage/tapeRecord.svg";
 import logo from "/logo.svg";
-// SMSpage Images
+import doublewaylogo from "../assets/SMS-20241116T100910Z-001/SMS/Lottie/2_way_messaging.json"
+import email_to_sms from "../assets/SMS-20241116T100910Z-001/SMS/Lottie/email_to_sms.json"
+//import longcode_service from "../assets/SMS-20241116T100910Z-001/SMS/Lottie/longcode_sevice.json"
+import sms_2fa from "../assets/SMS-20241116T100910Z-001/SMS/Lottie/sms_2fa.json"
+import sms_marketing from "../assets/SMS-20241116T100910Z-001/SMS/Lottie/sms_marketing.json"
+import transectional_sms from "../assets/SMS-20241116T100910Z-001/SMS/Lottie/transactional_sms.json"
+import execute from "../assets/WhatsApp Business API-20241116T100912Z-001/WhatsApp Business API/Lottie/Execute.json"
+import flows from "../assets/WhatsApp Business API-20241116T100912Z-001/WhatsApp Business API/Lottie/flows.json"
+import interact from "../assets/WhatsApp Business API-20241116T100912Z-001/WhatsApp Business API/Lottie/Interact.json"
+import notify from "../assets/WhatsApp Business API-20241116T100912Z-001/WhatsApp Business API/Lottie/Notify.json"
+import retrieve from "../assets/WhatsApp Business API-20241116T100912Z-001/WhatsApp Business API/Lottie/Retrieve.json"
+import automatic from "../assets/Email-20241116T100907Z-001/Email/Lottie/Automated.json"
+import exciting  from "../assets/Email-20241116T100907Z-001/Email/Lottie/Exciting.json"
+import Otp from "../assets/Email-20241116T100907Z-001/Email/Lottie/Otp.json"
+import action from "../assets/RCS-20241116T061300Z-001/RCS/Lottie/action.json"
+import brand from "../assets/RCS-20241116T061300Z-001/RCS/Lottie/brand.json"
+import card from "../assets/RCS-20241116T061300Z-001/RCS/Lottie/Cards.json"
+import corousels from "../assets/RCS-20241116T061300Z-001/RCS/Lottie/Carousels.json"
+import media from "../assets/RCS-20241116T061300Z-001/RCS/Lottie/media.json"
+import suggested from "../assets/RCS-20241116T061300Z-001/RCS/Lottie/suggested.json"
+
+
+
+
+
 import colletctdataimg from "../assets/SMS-20241116T100910Z-001/SMS/Images/Collect data, analyse insights and take action.webp";
 import powerupimg from "../assets/SMS-20241116T100910Z-001/SMS/Images/Power Up Your Customer Engagement with Smart SMS Solutions.webp";
 import reliableimg from "../assets/SMS-20241116T100910Z-001/SMS/Images/Reliable, Low-Latency Messaging for Global Reach with Seamless Fallback Mechanism.webp";
 import scaleengageimg from "../assets/SMS-20241116T100910Z-001/SMS/Images/Scale Engagement with Secure, Compliant 2-Way SMS Conversations.webp";
+import { Carousel } from "bootstrap";
 // Heropage Data===============================================
 // Navbar data==
 export const navbardata = [
@@ -25,7 +51,7 @@ export const navbardata = [
     arrowlogo:false
   },
   {
-    path: "/",
+    path: "/Service",
     linkname: "Service",
     arrowlogo:true
   },
@@ -196,42 +222,54 @@ export const footerpart = [
 // SMS page ================================================
 export const smsProvider=[
   {
-   img: "",
+  id:1,
+   img: sms_2fa,
     title: "SMS 2FA",
     content:
       "Keep your customers' accounts safe with SMS 2FA (two-factor authentication) or SMS OTP to enhance security.",
+    isImageOrLottie:true
     },
     {
-      img: "",
+      id:2,
+      img: transectional_sms,
        title: "Transactional SMS",
        content:
          "Set up automated SMS flows, like welcome messages, order confirmations, updates, and more.",
-       },
+      isImageOrLottie:true
+        },
        {
-        img: "",
+        id:3,
+        img: sms_marketing,
          title: "SMS marketing",
          content:
            "Enhance your conversion rates significantly by implementing personalized, automated SMS marketing campaigns.",
-    },
+           isImageOrLottie:true
+          },
     {
+      id:4,
       img: "",
        title: "Longcode Services",
        content:
          "Boost your brand’s visibility and elevate customer engagement with dedicated longcode solutions.",
-       },
+         isImageOrLottie:true
+        },
        {
-        img: "",
+        id:5,
+        img:email_to_sms,
          title: "Email-to-SMS Solution",
          content:
            "Keep your customers' accounts safe with SMS 2FA (two-factor authentication) or SMS OTP to enhance security.",
-      },
+           isImageOrLottie:true
+          },
      
       {
-        img: "",
+        id:6,
+        img: doublewaylogo,
          title: "2-Way Messaging",
          content:
-           "Accelerate communication and enable real-time customer interaction with seamless 2-way messaging solutions.",
-      },
+         "Accelerate communication and enable real-time customer interaction with seamless 2-way messaging solutions.",
+         isImageOrLottie:true
+        },
 
 
 ]
@@ -494,47 +532,53 @@ export const bulkSmsBox=[
 // Rcs box container ===================================================== 
 export const rcsbox = [
   {
-    id: "choose-1",
-    img: savingicon,
+    id:1,
+    img: media,
     title: "Rich Media",
     content:
       "Share media like images and videos, allowing customers to review and choose multiple products or services.",
-  },
+      isImageOrLottie:true
+    },
   {
-    id: "choose-2",
-    img: benifiticon,
+    id: 2,
+    img: brand,
     title: "Branded communications",
     content:
       "Boost your brand with captivating and engaging visuals. This enhances recognition and connects deeply with users.",
-  },
+      isImageOrLottie:true
+    },
   {
-    id: "choose-3",
-    img: needicon,
+    id: 3,
+    img:action,
     title: "Actionable Buttons",
     content:
       "Provide actionable buttons to easily enable purchases, product/services options, polling, and feedback.",
-  },
+      isImageOrLottie:true
+    },
   {
-    id: "choose-4",
-    img: featureicon,
+    id: 4,
+    img: corousels,
     title: "Carousels",
     content:
       "Combine up to 10 rich cards into an interactive unit for customers to swipe through. A small step in selecting the best offer.",
-  },
+      isImageOrLottie:true
+    },
   {
-    id: "choose-5",
-    img: onboarding,
+    id: 5,
+    img:card ,
     title: "Cards",
     content:
       "Engage in meaningful conversations with customers by utilizing rich, interactive content for two-way communication.",
-  },
+      isImageOrLottie:true
+    },
   {
-    id: "choose-6",
-    img: supporticon,
+    id:6,
+    img: suggested,
     title: "Suggested replies",
     content:
       "Provide suggested replies that can effectively accelerate customer engagements quickly and efficiently.",
-  },
+      isImageOrLottie:true
+    },
 ];
 
 export const rcs=[
@@ -579,47 +623,54 @@ export const rcs=[
 
 export const whatsAppBox=[
   {
-    id: "choose-1",
-    img: savingicon,
+    id: 1,
+    img:"",
     title: "Promotional Messages ",
     content:
       "Send exciting offers, discount codes, and festival wishes without risking your number!",
-  },
+    isImageOrLottie:true
+    },
   {
-    id: "choose-2",
-    img: savingicon,
+    id: 2,
+    img:notify,
     title: "Notify ",
     content:
       "Send out notifications eg. periodic account summary, policy expiry, delivery tracking information.",
-  },
+      isImageOrLottie:true
+    },
   {
-    id: "choose-3",
-    img: savingicon,
+    id: 3,
+    img: execute,
     title: "Execute ",
     content:
       "Carry out transactions such as travel bookings, rescheduling a delivery and account opening.",
-  },
+      isImageOrLottie:true
+    
+    },
   {
-    id: "choose-4",
-    img: savingicon,
+    id: 4,
+    img: flows,
     title: "Flows",
     content:
       "Minimize friction in messages. Provide customized booking and feedback experiences.",
-  },
+      isImageOrLottie:true
+    },
   {
-    id: "choose-5",
-    img: savingicon,
+    id: 5,
+    img: retrieve,
     title: "Retrieve ",
     content:
       "Get account balance, profile info, warranty details, tracking updates.",
-  },
+      isImageOrLottie:true
+    },
   {
-    id: "choose-6",
-    img: savingicon,
+    id: 6,
+    img: interact,
     title: "Interact ",
     content:
       "Assist customers with their questions, concerns, and clarifications.",
-  },
+      isImageOrLottie:true
+    },
 
 ]
 
@@ -658,26 +709,29 @@ export const whatsApp=[
 
 export const emailBox=[
   {
-    id: "choose-6",
-    img: savingicon,
+    id:1,
+    img: Otp,
     title: "OTP, Transactional alerts and Messaging ",
     content:
       "ntegrate our emailing solution with your app for OTP verification, authentication, or sending critical updates.",
-  },
+      isImageOrLottie:true
+    },
   {
-    id: "choose-6",
-    img: savingicon,
+    id:2,
+    img:automatic,
     title: "Automated batch emails with attachment",
     content:
       "Automate batch email processing for invoices and reports using our reliable APIs with no integration effort.",
-  },
+      isImageOrLottie:true
+    },
   {
-    id: "choose-6",
-    img: savingicon,
+    id:3,
+    img: exciting,
     title: "Exciting Promotional Campaigns ",
     content:
       "Schedule and send out advance email campaigns connecting with our rich and intuitive GUI design.",
-  },
+      isImageOrLottie:true
+    },
   
 ]
 
