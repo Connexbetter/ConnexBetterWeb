@@ -1,6 +1,6 @@
 import ContentImageBlock from "../../CommonComponents/ContentImageBlock";
 import Boxcontainer from "../../CommonComponents/Boxcontainer";
-import smsheroimg from "../../../assets/SMS-20241116T100910Z-001/SMS/Lottie/SMS Hero section.json";
+import smsheroimg from "../../../assets/SMS-20241116T100910Z-001/SMS/Lottie/sms_hero.json";
 import { sms, smsProvider,smsScroll } from "../../../Constant";
 import LeftRightBLock from "../../CommonComponents/LeftRightBLock";
 import Lottie from "lottie-react";
