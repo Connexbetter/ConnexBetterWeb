@@ -89,10 +89,9 @@ console.log("service nav")
         </div>
       )}
 
-
-      {
+{
     Servicenav && (
-      <div className=" h-60 in flex">
+      <div className=" h-60 hidden lg:flex">
       {
        <div className="flex">
        { 
@@ -102,8 +101,6 @@ console.log("service nav")
               ele={ele}></Card>
         })
        }
-      
-    
        </div>
       }
               

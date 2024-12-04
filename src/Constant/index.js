@@ -25,8 +25,8 @@ export const navbardata = [
     arrowlogo:false
   },
   {
-    path: "/",
-    linkname: "Service",
+    path: "",
+    linkname: "Products",
     arrowlogo:true
   },
   {
@@ -83,7 +83,6 @@ export const offers = [
       "Our IVR system offers cloud-based solutions to boost customer acquisition, enhance engagement, and improve ROI and efficiency.",
   }
 ];
-
 // / Why do Businesses choose Connex Better ==================
 export const chooseConnex = [
   {
@@ -129,6 +128,7 @@ export const chooseConnex = [
       "We trust our dedicated employees to provide exceptional enterprise solutions.",
   },
 ];
+
 
 export const Insights = [
   {
@@ -784,4 +784,35 @@ export const smsScroll = [
     content:
       "Look for a provider that offers a demo or trial period. This allows you to evaluate their services before committing. Providers confident in their offerings will often provide free trials to help you assess compatibility and key features.",
   },
+]
+
+// FAQ of HOMEPAge
+export const homeFAQ =[
+  {
+    id:"hFAQ1",
+    que:"What is a cloud communication platform?",
+    ans:"A cloud communication platform is an advanced technology that integrates real-time features like messaging, IVR, and video into your business applications. This enables seamless, contextual customer communication and provides numerous benefits for both businesses and customers."
+  },
+  {
+    id:"hFAQ2",
+    que:"What types of communication channels does a Cloud Communication Platform support?",
+    ans:"Cloud Communication Platforms usually support a variety of channels, including bulk SMS, voice calls, bulk email marketing, WhatsApp CRM, WhatsApp Business API, and push notifications.We provides all these services. For more information, email us at Support@connexbetter.com"
+  },
+  {
+    id:"hFAQ3",
+    que:"What are the pricing options?",
+    ans:"We have flexible pricing option for each of the communication. For detail pricing plan click on pricing."
+  },
+  {
+    id:"hFAQ1",
+    que:"What is a cloud communication platform?",
+    ans:"A cloud communication platform is an advanced technology that integrates real-time features like messaging, IVR, and video into your business applications. This enables seamless, contextual customer communication and provides numerous benefits for both businesses and customers."
+  },
+  {
+    id:"hFAQ1",
+    que:"What is a cloud communication platform?",
+    ans:"A cloud communication platform is an advanced technology that integrates real-time features like messaging, IVR, and video into your business applications. This enables seamless, contextual customer communication and provides numerous benefits for both businesses and customers."
+  },
+
+
 ]

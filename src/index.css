@@ -16,6 +16,10 @@ html {
   margin: auto;
   padding: 0 1rem 0 1rem;
 }
+h1,h2,h3,h4{
+  font-family: "Montserrat", serif;
+
+}
 :root {
   color-scheme: light;
   --primerycolor: #0052cc;
@@ -30,6 +34,12 @@ li {
   border: 2px solid;
   margin: 2rem 0;
   padding:0 1rem ;
+}
+.hide{
+ display: none;
+}
+.nothide{
+display: flex;
 }
 /* @media(width<=892){
     #root{
