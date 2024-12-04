@@ -10,7 +10,7 @@ export const Accordian=({val})=>{
     }
    
     return(
-        <div className="">
+        <div className="bg-tertiaryc">
             <div className="border cursor-pointer flex p-5 justify-between" >{val.que}<span onClick={()=>handelArrowbtn()}>{hide?<IoIosArrowUp/>:<IoIosArrowDown />}</span></div>
             <div className={`${hide ? "nothide" : "hide"} p-5`}>{val.ans}</div>
         </div>
