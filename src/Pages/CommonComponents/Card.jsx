@@ -8,7 +8,7 @@ export const Card = ({ ele }) => {
     <div className="card flex flex-col gap-2 p-5 rounded-lg bg-secondary">
       <div className="card-img">
         {isImageOrLottie ? (
-          <Lottie animationData={img} className="h-20 w-20" />
+          <Lottie animationData={img} className="h-20 w-20 " />
         ) : (
           <img src={img} alt="icons" height={10} width={30} />
         )}
