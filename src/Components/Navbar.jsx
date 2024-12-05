@@ -49,7 +49,7 @@ console.log("service nav")
   }
   return (
     <>
-      <nav className="flex justify-between pt-3 pb-3 text-xl sticky top-0 bg-white border-b">
+      <nav className="flex justify-between pt-3 pb-3 text-xl sticky top-0 bg-white border-b z-10">
         <div className="logo-sec">
           <img src={logo} alt="logo" height={20}></img>
         </div>

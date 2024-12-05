@@ -9,6 +9,7 @@ import { Email } from "./Pages/Service/Email/Email";
 import { SmsOtp } from "./Pages/Service/SmsOtp/SmsOtp";
 import { InternationalSms } from "./Pages/Service/InternationalSms/InternationalSms";
 import { BulkSms  } from "./Pages/Service/BulkSms/BulkSms";
+import { Pricing } from "./Pages/Pricing/Pricing";
 // import { sms } from './Constant';
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
           <Route path="/Email" Component={Email}></Route>
           <Route path="/InternationalSms" Component={InternationalSms}></Route>
           <Route path="/SmsOtp" Component={SmsOtp}></Route>
+          <Route path="/Pricing" Component={Pricing}></Route>
           <Route path="/BulkSms" Component={BulkSms}></Route>
         </Routes>
         {/* <FAQ></FAQ> */}

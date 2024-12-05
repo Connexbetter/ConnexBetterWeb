@@ -31,7 +31,7 @@ li {
   list-style: none;
 }
 .container {
-  border: 2px solid;
+  /* border: 2px solid; */
   margin: 2rem 0;
   padding:0 1rem ;
 }
@@ -47,6 +47,9 @@ display: flex;
     }
   } */
 @media (width<= 600px){
+  /* html{
+    font-size:70% ;
+  } */
   .secComponent{
     img{
       order: 2;

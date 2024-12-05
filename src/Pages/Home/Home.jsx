@@ -47,7 +47,7 @@ function Home() {
 {/* World's Most Advance Paasfor================ */}
     <div className="container grid gap-4 md:grid-cols-2 items-center">
     <div className="content-sec flex flex-col gap-2">
-    <p className="text-2xl text-tertiary">World’s Most Advanced PaaS for<span className="text-primery ml-2">Enterprise Communications.</span> </p>
+    <p className="text-2xl text-paracolor">World’s Most Advanced PaaS for<span className="text-primery ml-2">Enterprise Communications.</span> </p>
     <h2 className="text-3xl font-medium">SMS  | RCS | WhatsApp  |Email | Voice</h2>
     <div className="meta-logo-sec flex flex-col items-center justify-center h-28 w-28  rounded-full bg-secondary">
     <img src={metalogo} alt="Meta logo" height={10} width={30}></img>
