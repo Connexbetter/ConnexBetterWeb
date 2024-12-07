@@ -64,6 +64,13 @@ import collect from "../assets/WhatsApp Business API-20241116T100912Z-001/WhatsA
 import rich from "../assets/WhatsApp Business API-20241116T100912Z-001/WhatsApp Business API/Images/rich.webp"
 import safety from "../assets/WhatsApp Business API-20241116T100912Z-001/WhatsApp Business API/Images/safety.webp"
 import varified from "../assets/WhatsApp Business API-20241116T100912Z-001/WhatsApp Business API/Images/varified.webp"
+//voice image
+import call from "../assets/voiceImage/call.svg"
+import headPhone from "../assets/voiceImage/headPhone.svg"
+import voice from "../assets/voiceImage/voice.svg"
+//ivr image
+import hosted from "../assets/IvrImages/hosted.svg"
+import agent from "../assets/IvrImages/agent.svg"
 
 import colletctdataimg from "../assets/SMS-20241116T100910Z-001/SMS/Images/Collect data, analyse insights and take action.webp";
 import powerupimg from "../assets/SMS-20241116T100910Z-001/SMS/Images/Power Up Your Customer Engagement with Smart SMS Solutions.webp";
@@ -804,22 +811,22 @@ export const email=[
 
 export const voiceBox=[
   {
-    id: "choose-1",
-    img: savingicon,
+    id: 1,
+    img: headPhone,
     title: "Contact center solution",
     content:
       "It streamlines communication, reduces wait times, and provides real-time analytics. Its multichannel support and scalability enhance customer satisfaction and efficiency.",
   },
   {
-    id: "choose-2",
-    img: savingicon,
+    id: 2,
+    img: voice,
     title: "Voice OBD Services",
     content:
       "Voice OBD Service delivers automated voice messages to large audiences, enhancing customer engagement for promotions, alerts, reminders, and feedback collection.",
   },
   {
-    id: "choose-3",
-    img: savingicon,
+    id: 3,
+    img: call,
     title: "Call Patching",
     content:
       "It transfers automated calls to agents, enhancing service with prompt assistance from knowledgeable reps. This improves response times and elevates the experience.",
@@ -918,4 +925,205 @@ export const homeFAQ =[
   },
 
 
+]
+
+
+export const ivrBox=[
+  {
+    id: 1,
+    img: headPhone,
+    title: "VR for Self-Service",
+    content:
+      "An Interactive Voice Response (IVR) system automates phone services, allowing users to respond to prompts with voice commands. This technology enhances customer interactions, enabling quick self-service without live agents.",
+  },
+  {
+    id: 2,
+    img: hosted,
+    title: "Hosted IVR",
+    content:
+      "Hosted IVR services provide 24/7 customer support, enhancing satisfaction, loyalty, and customer experience while streamlining processes for call centers. They are also a cost-effective alternative to outsourcing.",
+  },
+  {
+    id: 3,
+    img: agent,
+    title: "Agent-Assisted IVR",
+    content:
+      "Agent-assisted IVR software integrates voice recognition into existing IVR systems, helping contact centers cut costs and streamline operations by handling basic questions, reducing call volume, and easing wait times.",
+  },
+]
+
+export const ivr=[
+
+  {
+    id:1,
+    img: rich,
+    title: "Real-time Engagement",
+    content:
+      "Greet your callers with a personalized and polished voice message that reflects your brand's unique identity and professionalism.",
+    contentOnLeft:true
+  },
+  {
+    id:2,
+    img: rich,
+    title: "Enhanced voice recognition system",
+    content:
+      "Implement a sophisticated voice recognition system that not only identifies the caller's intent but also provides a range of relevant options for a seamless interaction.",
+    contentOnLeft:false
+  },
+  {
+    id:3,
+    img: rich,
+    title: "Comprehensive Call Tracking, Recording, and Follow-Up Notifications",
+    content:
+      "Monitor missed, attended, and outgoing calls by agent and department, with automatic call recordings stored on the cloud. Receive timely notifications for missed calls to ensure effective follow-ups and improved customer satisfaction.",
+    contentOnLeft:true
+  },
+  {
+    id:4,
+    img: rich,
+    title: "24/7 Customer Support with Seamless After-Hours Assistance",
+    content:
+      "Set up a pre-recorded message for callers who reach out after business hours. Allow them to leave queries or schedule appointments, ensuring continuous support and engagement even when your team is unavailable.",
+    contentOnLeft:false
+  },
+]
+
+export const ivrSolutions=[
+  {
+    id:1,
+    img:headPhone,
+    title:"Contact center solution",
+    content:"It streamlines communication, reduces wait times, and provides real-time analytics. Its multichannel support and scalability enhance customer satisfaction and efficiency.",
+  },
+  {
+    id:2,
+    img:voice,
+    title:"Voice OBD Services",
+    content:"Voice OBD Service delivers automated voice messages to large audiences, enhancing customer engagement for promotions, alerts, reminders, and feedback collection.",
+  },
+  {
+    id:3,
+    img:call,
+    title:"Call Patching",
+    content:"It transfers automated calls to agents, enhancing service with prompt assistance from knowledgeable reps. This improves response times and elevates the experience.",
+  },
+]
+
+export const ccsBox=[
+  {
+    id:1,
+    img:call,
+    title:"Live call transfer",
+    content:"Transfer calls between agents or departments without disconnecting customers.",
+  },
+  {
+    id:2,
+    img:call,
+    title:"Seamless Integrations",
+    content:"Connect instantly with CRM, ERP, Truecaller, Zapier, and other major enterprise tools.",
+  },
+  {
+    id:3,
+    img:call,
+    title:"Remote Teams",
+    content:"Manage remote teams, allowing agents to handle business calls from any location seamlessly.",
+  },
+  {
+    id:4,
+    img:call,
+    title:"Call Masking",
+    content:"Concealing personal numbers of both customers and agents during calls.",
+  },
+  {
+    id:5,
+    img:call,
+    title:"Live Panel",
+    content:"Track real-time team activities, including agent performance, call logs, and analytics.",
+  },
+  {
+    id:6,
+    img:call,
+    title:"Outbound Calling",
+    content:"Automate calls to customers or clients and receive faster responses using IVR inputs.",
+  },
+  {
+    id:7,
+    img:call,
+    title:"Toll-Free Calls",
+    content:"Enable toll-free calls, allowing customers to reach you without incurring any cost.",
+  },
+  {
+    id:8,
+    img:call,
+    title:"Call Queue",
+    content:"Reduce call abandonment by connecting customers to available agents quickly.",
+  },
+  {
+    id:9,
+    img:call,
+    title:"Click to Call",
+    content:"Make outbound calls instantly with one click, no manual dialing required.",
+  },
+  {
+    id:10,
+    img:"",
+    title:"Multi-Level IVR",
+    content:"Set up IVR menus with custom departments and greetings for better call flow.",
+  },
+  {
+    id:11,
+    img:call,
+    title:"Recorded Conversations",
+    content:"Use call recordings to train agents and enhance customer interaction quality.",
+  },
+  {
+    id:12,
+    img:call,
+    title:"AI-Powered Insights",
+    content:"Analyze call patterns, sentiment, and performance for better decisions",
+  },
+]
+
+
+export const ccs=[
+  {
+    id:4,
+    img: rich,
+    title: "24/7 Customer Support with Seamless After-Hours Assistance",
+    content:
+      "Set up a pre-recorded message for callers who reach out after business hours. Allow them to leave queries or schedule appointments, ensuring continuous support and engagement even when your team is unavailable.",
+    contentOnLeft:false
+  },
+  {
+    id:4,
+    img: rich,
+    title: "24/7 Customer Support with Seamless After-Hours Assistance",
+    content:
+      "Set up a pre-recorded message for callers who reach out after business hours. Allow them to leave queries or schedule appointments, ensuring continuous support and engagement even when your team is unavailable.",
+    contentOnLeft:false
+  },
+  {
+    id:4,
+    img: rich,
+    title: "24/7 Customer Support with Seamless After-Hours Assistance",
+    content:
+      "Set up a pre-recorded message for callers who reach out after business hours. Allow them to leave queries or schedule appointments, ensuring continuous support and engagement even when your team is unavailable.",
+    contentOnLeft:false
+  },
+  {
+    id:4,
+    img: rich,
+    title: "24/7 Customer Support with Seamless After-Hours Assistance",
+    content:
+      "Set up a pre-recorded message for callers who reach out after business hours. Allow them to leave queries or schedule appointments, ensuring continuous support and engagement even when your team is unavailable.",
+    contentOnLeft:false
+  },
+  {
+    id:4,
+    img: rich,
+    title: "24/7 Customer Support with Seamless After-Hours Assistance",
+    content:
+      "Set up a pre-recorded message for callers who reach out after business hours. Allow them to leave queries or schedule appointments, ensuring continuous support and engagement even when your team is unavailable.",
+    contentOnLeft:false
+  },
 ]
