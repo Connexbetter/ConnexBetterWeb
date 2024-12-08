@@ -1,4 +1,4 @@
-import { offers } from "../../Constant";
+import { offers,homeBox } from "../../Constant";
 import { chooseConnex } from "../../Constant";
 import { Insights } from "../../Constant";
 import { CommonHeading } from "../CommonComponents/CommonHeading";
@@ -97,9 +97,16 @@ function Home() {
   content="Sign up today and create your perfect customer engagement experience."
           img=""
         />
+        </div>
 
-  
-      </div>
+        <Boxcontainer
+        heading="Boost revenue and grow business."
+        para="Utilize our dependable AI platform designed to streamline the journey from discussions to successful conversions."
+        carddata={homeBox}
+        showbutton={false}
+      />
+
+
         {/* Insights and Updates Container */}
         <div className="container">
         <CommonHeading h="Insights & Updates" p="Stay updated with the latest trends, tips, and guides on API solutions and business communication strategies."></CommonHeading>

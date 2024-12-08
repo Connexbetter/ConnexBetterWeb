@@ -71,6 +71,12 @@ import voice from "../assets/voiceImage/voice.svg"
 //ivr image
 import hosted from "../assets/IvrImages/hosted.svg"
 import agent from "../assets/IvrImages/agent.svg"
+// home boost revenue and grow business image
+import customer from "../assets/homeImage/customer.svg"
+import engagement from "../assets/homeImage/engagement.svg"
+import marketing from "../assets/homeImage/marketingAndSales.svg"
+import operation from "../assets/homeImage/operations.svg"
+
 
 import colletctdataimg from "../assets/SMS-20241116T100910Z-001/SMS/Images/Collect data, analyse insights and take action.webp";
 import powerupimg from "../assets/SMS-20241116T100910Z-001/SMS/Images/Power Up Your Customer Engagement with Smart SMS Solutions.webp";
@@ -1125,5 +1131,31 @@ export const ccs=[
     content:
       "Set up a pre-recorded message for callers who reach out after business hours. Allow them to leave queries or schedule appointments, ensuring continuous support and engagement even when your team is unavailable.",
     contentOnLeft:false
+  },
+]
+export const homeBox=[
+  {
+    id:1,
+    img:marketing,
+    title:"Marketing & Sales",
+    content:"Reach customers with personalised messages & exceed your business goals",
+  },
+  {
+    id:2,
+    img:engagement,
+    title:"Engagement",
+    content:"Build frictionless consumer journey & create memorable experiences",
+  },
+  {
+    id:3,
+    img:customer,
+    title:"Customer Support",
+    content:"Automate your customer care & build engaging interactive customer journeys.",
+  },
+  {
+    id:4,
+    img:operation,
+    title:"Operations",
+    content:"Manage all your communications from one place & improve operations",
   },
 ]
