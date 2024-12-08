@@ -49,11 +49,11 @@ console.log("service nav")
   }
   return (
     <>
-      <nav className="flex justify-between pt-3 pb-3 text-xl sticky top-0 bg-white border-b z-40">
+      <nav className="flex justify-between items-center pt-3 pb-3 text-xl sticky top-0 bg-white border-b z-40   ">
         <div className="logo-sec">
-          <img src={logo} alt="logo" height={20}></img>
+          <img src={logo} alt="logo" height={20} loading="lazy"></img>
         </div>
-        <ul className=" hidden lg:flex gap-12 ">
+        <ul className=" hidden lg:flex gap-12">
           {navbardata.map((ele, ind) => {
             return (
               <li key={ind}>

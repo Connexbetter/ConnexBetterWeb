@@ -8,7 +8,10 @@ export const FAQ = () => {
         <div className=""> <CommonHeading h="FAQ" p="Find quick answers to your questions about our API services, integration, and support."></CommonHeading></div>
         <div>
         {homeFAQ.map((val) => (
-                <Accordian key={val.id} val={val} />
+            <div className="mb-2">
+            <Accordian key={val.id} val={val}/>
+            </div>
+               
             ))}
         </div>
 
