@@ -31,7 +31,7 @@ li {
   list-style: none;
 }
 .container {
-  /* border: 2px solid; */
+  border: 2px solid;
   margin: 2rem 0;
   padding:0 1rem ;
 }
@@ -41,6 +41,63 @@ li {
 .nothide{
 display: flex;
 }
+
+.scrollbar-extra-thin::-webkit-scrollbar {
+  width: 4px; /* Adjust width here */
+}
+
+.scrollbar-extra-thin::-webkit-scrollbar-thumb {
+  background-color: #3b82f6; /* Thumb color */
+  border-radius: 8px;
+}
+
+.scrollbar-extra-thin::-webkit-scrollbar-track {
+  background-color: #e5e7eb; /* Track color */
+}
+
+
+
+.header {
+  position: relative;
+  font-size: 24px; /* Adjust font size as needed */
+  color: #1E63D8; /* Blue color */
+  font-weight: bold;
+}
+
+.header::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 4px; /* Thickness of the line */
+  background: linear-gradient(to right, #D1E2FF, #1E63D8); /* Gradient color */
+  border-bottom-left-radius: 10px; /* Curve effect */
+  
+  z-index: -1;
+}
+
+
+.animate-fade-in-out {
+  animation: fade-in-out 2s ease-in-out infinite;
+}
+
+@keyframes fade-in-out {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+}
+
+
 /* @media(width<=892){
     #root{
       max-width:800px;

@@ -32,10 +32,38 @@ import card from "../assets/RCS-20241116T061300Z-001/RCS/Lottie/Cards.json"
 import corousels from "../assets/RCS-20241116T061300Z-001/RCS/Lottie/Carousels.json"
 import media from "../assets/RCS-20241116T061300Z-001/RCS/Lottie/media.json"
 import suggested from "../assets/RCS-20241116T061300Z-001/RCS/Lottie/suggested.json"
-
-
-
-
+//sms authentication otp
+import sms_Otp from "../assets/smsOtp/Image/otp.svg"
+import report from "../assets/smsOtp/Image/report.svg"
+import route from "../assets/smsOtp/Image/route.svg"
+import time from "../assets/smsOtp/Image/time.svg"
+import user from "../assets/smsOtp/Image/user.svg"
+import validity from "../assets/smsOtp/Image/validity.svg"
+//international sms
+import easy from "../assets/InternationalSms/Image/easy.svg"
+import engage from "../assets/InternationalSms/Image/engage.svg"
+import enhance from "../assets/InternationalSms/Image/enhance.svg"
+import integration from "../assets/InternationalSms/Image/integration.svg"
+import payment from "../assets/InternationalSms/Image/payment.svg"
+import secure from "../assets/InternationalSms/Image/secure.svg"
+//bulk sms
+import double from "../assets/bulkSms/Image/doubleWayMessage.svg"
+import emailToSms from "../assets/bulkSms/Image/emailToSms.svg"
+import longService from "../assets/bulkSms/Image/longService.svg"
+import marketSms from "../assets/bulkSms/Image/marketSms.svg"
+import sms2Fa from "../assets/bulkSms/Image/sms2Fa.svg"
+import smstrans from "../assets/bulkSms/Image/smsTrans.svg"
+//big image rcs
+import boost from "../assets/RCS-20241116T061300Z-001/RCS/Images/boost.webp"
+import deploy from "../assets/RCS-20241116T061300Z-001/RCS/Images/deploy.webp"
+import lowLatency from "../assets/RCS-20241116T061300Z-001/RCS/Images/lowLatency.webp"
+import reliable from "../assets/RCS-20241116T061300Z-001/RCS/Images/lowLatency.webp"
+import visually from "../assets/RCS-20241116T061300Z-001/RCS/Images/visually.webp"
+//big image whatsApp
+import collect from "../assets/WhatsApp Business API-20241116T100912Z-001/WhatsApp Business API/Images/collect.webp"
+import rich from "../assets/WhatsApp Business API-20241116T100912Z-001/WhatsApp Business API/Images/rich.webp"
+import safety from "../assets/WhatsApp Business API-20241116T100912Z-001/WhatsApp Business API/Images/safety.webp"
+import varified from "../assets/WhatsApp Business API-20241116T100912Z-001/WhatsApp Business API/Images/varified.webp"
 
 import colletctdataimg from "../assets/SMS-20241116T100910Z-001/SMS/Images/Collect data, analyse insights and take action.webp";
 import powerupimg from "../assets/SMS-20241116T100910Z-001/SMS/Images/Power Up Your Customer Engagement with Smart SMS Solutions.webp";
@@ -341,37 +369,43 @@ export const smsOtp=[
 
 export const smsOtpBox=[
   {
-    img: "",
+    id:1,
+    img: time,
      title: "Time Guarantee",
      content:
        "Ensure 99% OTP SMS delivery in 5-10 seconds for secure logins. Enhance user experience with reliable authentication!",
   },
   {
-    img: "",
+    id:2,
+    img:user,
      title: "User Authentication",
      content:
        "Verify identities and reduce impersonation risks with 2FA, ensuring enhanced security for your applications.",
   },
   {
-    img: "",
+    id:3,
+    img: route,
      title: "Dedicated Routes",
      content:
        "Send OTPs securely with dedicated carrier routing for fast, reliable delivery, enhancing user experience and security.",
   },
   {
-    img: "",
+    id:4,
+    img: sms_Otp,
      title: "OTP Length​",
      content:
        "Customize OTP lengths with options for 4-digit or 6-digit codes, tailored to suit your security and user preferences.",
   },
   {
-    img: "",
+    id:5,
+    img: report,
      title: "Reports & Analytics",
      content:
        "Intuitive dashboards for easy monitoring, management, and reporting to boost efficiency and decision-making.",
   },
   {
-    img: "",
+    id:6,
+    img: validity,
      title: "Validity Period",
      content:
        "Customize OTP validity with options for seconds, minutes, or hours, ensuring security for your authentication.",
@@ -381,42 +415,48 @@ export const smsOtpBox=[
 
 export const internationalSmsBox=[
   {
-    img: "",
+    id:1,
+    img: enhance,
     title: "Enhance customer loyalty and trust",
     content:
       "Build strong relationships with secure, timely communications through our international SMS API, fostering customer trust and loyalty.",
   
   },
   {
-    img: "",
+    id:2,
+    img: engage,
     title: "Engage with your subscribers",
     content:
       "Connect with your audience globally using personalized SMS, boosting engagement and interaction with real-time updates and promotions.",
     
   },
   {
-    img: "",
+    id:3,
+    img: easy,
     title: "Easy & Reliable Customer Feedback",
     content:
       "Collect valuable customer insights through quick and reliable SMS feedback, streamlining responses and improving service quality.",
     
   },
   {
-    img: "",
+    id:4,
+    img: secure,
     title: "Secure and scalable",
     content:
       "Ensure the security and scalability of your communications with our robust international SMS API, handling high volumes securely and efficiently.",
     
   },
   {
-    img: "",
+    id:5,
+    img: payment,
     title: "Payment Collections",
     content:
       "Simplify payment reminders and collections with our SMS API, ensuring timely payments and improving cash flow through easy customer communication.",
     
   },
   {
-    img: "",
+    id:6,
+    img: integration,
     title: "Integrations",
     content:
       "Seamlessly integrate our international SMS API with your existing platforms, enhancing communication workflows for smooth and efficient operations.",
@@ -484,43 +524,43 @@ export const bulkSms=[
 
 export const bulkSmsBox=[
   {
-    id: "choose-1",
-    img: savingicon,
+    id: 1,
+    img: sms2Fa,
     title: "SMS 2FA",
     content:
       "Keep your customers' accounts safe with SMS 2FA (two-factor authentication) or SMS OTP to enhance security.",
   },
   {
-    id: "choose-1",
-    img: savingicon,
+    id: 2,
+    img: smstrans,
     title: "Transactional SMS",
     content:
       "Set up automated SMS flows, like welcome messages, order confirmations, updates, and more.",
   },
   {
-    id: "choose-1",
-    img: savingicon,
+    id: 3,
+    img: marketSms,
     title: "SMS marketing",
     content:
       "Enhance your conversion rates significantly by implementing personalized, automated SMS marketing campaigns.",
   },
   {
-    id: "choose-1",
-    img: savingicon,
+    id: 4,
+    img: longService,
     title: "Longcode Services",
     content:
       "Boost your brand’s visibility and elevate customer engagement with dedicated longcode solutions.",
   },
   {
-    id: "choose-1",
-    img: savingicon,
+    id: 5,
+    img: emailToSms,
     title: "Email-to-SMS Solution",
     content:
       "Utilize Email-to-SMS for seamless communication, sending emails directly as SMS to specific mobile numbers for flexibility and ease.",
   },
   {
-    id: "choose-1",
-    img: savingicon,
+    id: 6,
+    img: double,
     title: "2-Way Messaging",
     content:
       "Accelerate communication and enable real-time customer interaction with seamless 2-way messaging solutions.",
@@ -584,35 +624,40 @@ export const rcsbox = [
 export const rcs=[
   
   {
-    img: "",
+    id:1,
+    img:visually ,
     title: "Visually showcase feature products and services",
     content:
       "Ensure that your messages resonate with your brand identity by incorporating RCS-enabled brand elements. This includes prominently displaying your logo, brand name, and color palette on the screen. By doing so, you create a cohesive visual experience that reinforces your brand's presence and makes your communications instantly recognizable to your audience.",
     contentOnLeft:true
   },
   {
-    img: "",
+    id:2,
+    img: deploy,
     title: "Deploy RCS campaigns with precision",
     content:
       "unch campaigns across iOS and Android devices from a single platform. Schedule messages to reach customers at optimal times. Manage multilingual content easily for global campaigns. Track performance with granular reporting on message engagement and journey progression.",
     contentOnLeft:false
   },
   {
-    img: "",
+    id:3,
+    img: reliable,
     title: "Reliable Messaging with Seamless Fallback Mechanism",
     content:
       "Ensure your messages always reach your audience with our advanced fallback capabilities. When RCS messages encounter delivery issues, they automatically switch to SMS, WhatsApp, or even voice calls, guaranteeing communication continuity",
     contentOnLeft:true
   },
   {
-    img: "",
+    id:4,
+    img: lowLatency,
     title: "Reliable, Low-Latency Messaging for Global Reach Personalize your offers and increase revenue",
     content:
       "Understand your customers’ interests, identify their needs, and personalize your communication, building lasting relationships that drive loyalty.",
     contentOnLeft:false
   },
   {
-    img: "",
+    id:5,
+    img: boost,
     title: "Boost response rates effectively with clickable buttons",
     content:
       "Allow customers to respond simply by clicking a button embedded within the conversation. Make it easier for them to reply and improve your interactions.",
@@ -677,28 +722,32 @@ export const whatsAppBox=[
 export const whatsApp=[
 
   {
-    img: "",
+    id:1,
+    img: rich,
     title: "Rich Media Messaging",
     content:
       "It enables businesses to send engaging, interactive messages beyond traditional text. It combines multimedia elements such as images, videos, and clickable buttons directly within SMS or messaging apps. This approach allows for dynamic content delivery, creating a visually rich experience that’s more interactive and memorable for users.",
     contentOnLeft:true
   },
   {
-    img: "",
+    id:2,
+    img: varified,
     title: "Verified Business",
     content:
       "When you set up a business account, you have to add a number, website and other details associated with your business that customers can easily access. This information has to be authorized by WhatsApp to verify the authenticity of the information.",
     contentOnLeft:false
   },
   {
-    img: "",
+    id:3,
+    img: safety,
     title: "Safety first always",
     content:
       "WhatsApp values the privacy and security of customer data. Messages between WhatsApp users are protected with an end-to-end encryption protocol so that WhatsApp themselves and any third party cannot get access to the message.",
     contentOnLeft:true
   },
   {
-    img: "",
+    id:4,
+    img: collect,
     title: "Collect Data, Analyze Insights, and Take Action with WhatsApp Business API",
     content:
       "WhatsApp Business API offers insights to help businesses understand customer interactions and improve engagement. Its analytics tools allow companies to collect data on delivery rates, response times, and preferences, enabling informed decisions and optimized communication strategies.",

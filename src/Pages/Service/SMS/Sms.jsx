@@ -43,19 +43,14 @@ export const Sms=()=>{
         p="Here are the key factors you should consider when choosing an SMS provider.">
 
         </CommonHeading>
-        <div className="h-80 overflow-y-scroll ">
-         {
-          smsScroll.map((ele,ind)=>{
-            return(
-              <div>
-                <h2 className="text-xl font-medium">{ele.title}</h2>
-                <p>{ele.content}</p>
-              </div>
-            )
-          })
-
-         }
-        </div>
+        <div className="h-80 overflow-y-scroll rtl-scroll scrollbar-extra-thin" style={{ direction: "rtl" }}>
+  {smsScroll.map((ele, ind) => (
+    <div key={ind} style={{ direction: "ltr" }} className="p-5"> {/* Reset text direction */}
+      <h2 className="text-xl font-medium">{ele.title}</h2>
+      <p>{ele.content}</p>
+    </div>
+  ))}
+</div>
 
       </div>
       

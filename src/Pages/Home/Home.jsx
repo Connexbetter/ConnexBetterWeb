@@ -10,40 +10,35 @@ import smscallimg from '../../assets/HomeImages/our feature.json';
 import metalogo from "../../assets/HomeImages/Metalogo.svg";
 import heromainimg from "../../assets/HomeImages/Hero.png"
 import Lottie from "lottie-react";
-import {Accordian} from "../CommonComponents/Accordian"
 import { useState,useEffect } from "react";
 import { FAQ } from "../CommonComponents/FAQ";
+import SequentialText from "../Textscroll";
 
 function Home() {
 
 
-  const texts = ["At Scale", "Globally", "Securely"]; // Array of texts to display
-  const [currentTextIndex, setCurrentTextIndex] = useState(0);
-
-  useEffect(() => {
-    if (currentTextIndex >= texts.length) return; // Stop when all texts are shown
-
-    const interval = setInterval(() => {
-      setCurrentTextIndex((prevIndex) => (prevIndex + 1)% texts.length);
-    }, 20000);
-
-  })
+ 
   return (
     <section className="hero-section section">
 {/* hero image  */}
     <div className="container grid gap-4 md:grid-cols-2 items-center">
     <div className="content-sec flex flex-col gap-4">
     <p className="text-2xl md:text-3xl text-primery">Connect Better, Engage Better </p>
-    <h1 className="text-3xl font-medium  md:text-5xl ">Transform customer interactions with thoughtful, intelligent communication</h1>
-    <h1 className="text-2xl">{texts[currentTextIndex]}</h1>
-<div><Button name="Contact us Now"></Button></div>
+    <h1 className=" leading-9 text-3xl font-normal md:text-5xl">
+  Transform customer interactions with thoughtful, intelligent communication
+</h1>
+    
+    
+    <SequentialText></SequentialText>
+  <div><Button name="Contact us Now"></Button></div>
   </div>
     <div>
     <img src={heromainimg}></img>
+    </div>
+    <div><span className="text-[#555555] text-sm font-normal ">By clicking "Get a Demo" you agree to Connex Better </span><span className="text-[#1a1a1a] text-sm font-medium underline">Privacy Statement</span></div>
 
     </div>
-
-    </div>
+    
 {/* World's Most Advance Paasfor================ */}
     <div className="container grid gap-4 md:grid-cols-2 items-center">
     <div className="content-sec flex flex-col gap-2">
@@ -115,17 +110,14 @@ function Home() {
         </div>
    
         </div>
-        
-        {/* <Accordian></Accordian> */}
        
-        {/* <Accordian></Accordian> */}
         <FAQ></FAQ>
-          
-       
-        
-       
+      
 
-    </section>
+
+        
+
+      </section>
   );
 }
 
