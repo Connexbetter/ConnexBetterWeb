@@ -13,6 +13,7 @@ import Lottie from "lottie-react";
 import { useState,useEffect } from "react";
 import { FAQ } from "../CommonComponents/FAQ";
 import SequentialText from "../Textscroll";
+import Range from "../../Range";
 
 function Home() {
 
@@ -24,8 +25,11 @@ function Home() {
     <div className="container grid gap-4 md:grid-cols-2 items-center">
     <div className="content-sec flex flex-col gap-4">
     <p className="text-2xl md:text-3xl text-primery">Connect Better, Engage Better </p>
-    <h1 className=" leading-9 text-3xl font-normal md:text-5xl">
-  Transform customer interactions with thoughtful, intelligent communication
+    <h1 className=" text-3xl flex font-normal md:text-5xl flex-col gap-2 ">
+    <h2>Transform customer </h2>
+    <h2>interactions with thoughtful</h2>
+    <h2>intelligent communication</h2>
+ 
 </h1>
     
     
@@ -112,6 +116,7 @@ function Home() {
         </div>
        
         <FAQ></FAQ>
+        <Range></Range>
       
 
 

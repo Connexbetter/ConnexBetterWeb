@@ -13,7 +13,7 @@ function SequentialText() {
   }, []);
 
   return (
-    <div className=" text-5xl font-normal text-primery animate-fade-in-out">
+    <div className=" text-3xl font-normal text-primery animate-fade-in-out md:text-5xl">
       {texts[currentTextIndex]}
     </div>
   );
